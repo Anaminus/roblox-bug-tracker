@@ -1,6 +1,35 @@
-roblox-bug-tracker
-==================
+# Roblox Bug Tracker
 
-An unofficial bug tracker for [Roblox](www.roblox.com).
+An unofficial tracker for bugs that I encounter on [Roblox](www.roblox.com).
 
-See the [Issue Tracker](./issues)
+See the [Issue Tracker](././issues)
+
+## Labels
+Here be descriptions for labels in the issue tracker.
+
+### Types
+What kind of issue. Every issue should have one of these.
+<table>
+<tr><th>Label</th><th>Description</th></tr>
+<tr><td> bug </td><td>Unexpected behavior, doesn't work as specified, etc...</td></tr>
+<tr><td> major bug </td><td>Bugs that crash or break the game.</td></tr>
+<tr><td> wishlist </td><td>Feature requests, things you would like to see added or improved.</td></tr>
+</table>
+
+### Categories
+Where the issue occurs.
+<table>
+<tr><th>Label</th><th>Description</th></tr>
+<tr><td> Game Engine </td><td>Issues occuring in-game, Instances, the Lua API, etc...</td></tr>
+<tr><td> Studio 1.0 </td><td>Issues related to the UI or functionality of Roblox Studio 1.0, things that occur only in Studio 1.0. Note the difference between the studio and the engine! </td></tr>
+<tr><td> Studio 2.0 </td><td>Same thing as above, but with Roblox Studio 2.0. Once again, note the difference!</td></tr>
+<tr><td> Website </td><td>Issues on the main Roblox website.</td></tr>
+<tr><td> Wiki </td><td>Issues on the Roblox Wiki.</td></tr>
+</table>
+
+### Platforms (not added)
+On which platform (operating system) the issue occurs. Only use these if an issue occurs on some platforms, but not others.
+- Windows XP
+- Windows 7
+- OS X
+- iOS
