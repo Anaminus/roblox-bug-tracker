@@ -2,7 +2,7 @@
 
 An unofficial tracker for bugs that I encounter on [Roblox](www.roblox.com).
 
-See the [Issue Tracker](././issues)
+See the [Issue Tracker](https://github.com/Anaminus/roblox-bug-tracker/issues)
 
 ## Labels
 Here be descriptions for labels in the issue tracker.
