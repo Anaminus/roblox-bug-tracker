@@ -21,10 +21,9 @@ Where the issue occurs.
 <table>
 <tr><th>Label</th><th>Description</th></tr>
 <tr><td> Game Engine </td><td>Issues occuring in-game, Instances, the Lua API, etc...</td></tr>
-<tr><td> Studio 1.0 </td><td>Issues related to the UI or functionality of Roblox Studio 1.0, things that occur only in Studio 1.0. Note the difference between the studio and the engine! </td></tr>
-<tr><td> Studio 2.0 </td><td>Same thing as above, but with Roblox Studio 2.0. Once again, note the difference!</td></tr>
-<tr><td> Website </td><td>Issues on the main Roblox website.</td></tr>
-<tr><td> Wiki </td><td>Issues on the Roblox Wiki.</td></tr>
+<tr><td> Studio 1.0 </td><td>Issues related to the UI or functionality of Roblox Studio 1.0, things that occur only in Studio 1.0. <b>Note the difference between the studio and the engine!</b></td></tr>
+<tr><td> Studio 2.0 </td><td>Same thing as above, but with Roblox Studio 2.0. Once again, <b>note the difference!</b></td></tr>
+<tr><td> Website </td><td>Issues on Roblox websites; roblox.com, m.roblox.com, wiki.roblox.com, etc. <b>Test sites are not included!</b> (i.e. gametest, sitetest)</td></tr>
 </table>
 
 ### Platforms (not added)
