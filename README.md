@@ -12,6 +12,7 @@ These are for me and you.
 - You don't have to be thorough now, but be thorough later.
 - If you can't reproduce a bug, don't bother.
 - If you don't know what you're talking about, don't bother.
+- If you have nothing to contribute, don't bother.
 
 ## Labels
 Here be descriptions for labels in the issue tracker. These are for me.
