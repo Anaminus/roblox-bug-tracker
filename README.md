@@ -5,8 +5,8 @@ An unofficial tracker for bugs that I encounter on [Roblox](www.roblox.com).
 **[Go to the Issue Tracker](https://github.com/Anaminus/roblox-bug-tracker/issues)**
 
 ## Things
+These are for me and you.
 
-- Use the appropriate labels.
 - Don't group seperate issues into one issue.
 - Make .rbxl or .rbxm files and link to them (pull request???).
 - You don't have to be thorough now, but be thorough later.
@@ -14,7 +14,7 @@ An unofficial tracker for bugs that I encounter on [Roblox](www.roblox.com).
 - If you don't know what you're talking about, don't bother.
 
 ## Labels
-Here be descriptions for labels in the issue tracker.
+Here be descriptions for labels in the issue tracker. These are for me.
 
 ### Types
 What kind of issue. Every issue should have one of these.
