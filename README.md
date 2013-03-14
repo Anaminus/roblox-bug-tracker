@@ -12,7 +12,7 @@ What kind of issue. Every issue should have one of these.
 <table>
 <tr><th>Label</th><th>Description</th></tr>
 <tr><td> bug </td><td>Unexpected behavior, doesn't work as specified, etc...</td></tr>
-<tr><td> major bug </td><td>Bugs that crash or break the game.</td></tr>
+<tr><td> crash </td><td>Bugs that crash or break the game.</td></tr>
 <tr><td> wishlist </td><td>Feature requests, things you would like to see added or improved.</td></tr>
 </table>
 
