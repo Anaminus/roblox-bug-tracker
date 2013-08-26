@@ -4,6 +4,8 @@ An unofficial tracker for bugs that I encounter on [Roblox](www.roblox.com).
 
 **[Go to the Issue Tracker](https://github.com/Anaminus/roblox-bug-tracker/issues)**
 
+For long-winded feature requests, try checking out **[roblox-enhancement-proposals](https://github.com/RobloxLabs/roblox-enhancement-proposals)** instead.
+
 ## Things
 These are for me and you.
 
