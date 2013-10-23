@@ -1,0 +1,21 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<External>null</External>
+	<External>nil</External>
+	<Item class="Part" referent="RBX0">
+		<Properties>
+			<float name="Transparency">1</float>
+		</Properties>
+		<Item class="ClickDetector" referent="RBX1">
+			<Properties>
+				<float name="MaxActivationDistance">9000</float>
+			</Properties>
+		</Item>
+		<Item class="Script" referent="RBX2">
+			<Properties>
+				<ProtectedString name="Source">script.Parent.ClickDetector.MouseClick:connect(function()
+&#9;print(&quot;The MouseClick event has fired.&quot;)
+end)</ProtectedString>
+			</Properties>
+		</Item>
+	</Item>
+</roblox>
