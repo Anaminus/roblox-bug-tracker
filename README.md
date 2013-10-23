@@ -1,22 +1,33 @@
 # Roblox Bug Tracker
+
 An unofficial tracker for bugs that I encounter on [Roblox](www.roblox.com).
 
 **[Go to the Issue Tracker](https://github.com/Anaminus/roblox-bug-tracker/issues)**
 
-For long-winded feature requests, try checking out **[roblox-enhancement-proposals](https://github.com/RobloxLabs/roblox-enhancement-proposals)** instead.
+For long-winded feature requests, try checking out **[roblox-enhancement-
+proposals](https://github.com/RobloxLabs/roblox-enhancement-proposals)**
+instead.
 
 ## Things
+
 - Try to create steps that reproduce a bug.
-- Create a `.rbxl` or `.rbxm` file that shows a bug in action (no pull request!).
+- Create a `.rbxl` or `.rbxm` file that shows a bug in action (no pull
+  request!).
 - Don't group separate issues into one issue.
 - Comments that do not contribute may be removed.
-- If you don't understand what's going on, or you can't reproduce a bug, don't bother submitting an issue.
+- If you don't understand what's going on, or you can't reproduce a bug, don't
+  bother submitting an issue.
 
 ## Labels
-Here be descriptions for labels in the issue tracker. Try to construct your issues around these labels. If you think your issue requires a new kind of label, submit an issue describing it.
+
+Here be descriptions for labels in the issue tracker. Try to construct your
+issues around these labels. If you think your issue requires a new kind of
+label, submit an issue describing it.
 
 ### Types
+
 What kind of issue. Every issue should have one of these.
+
 <table>
 <tr><th>Label</th><th>Description</th></tr>
 <tr><td> bug </td><td>Unexpected behavior, doesn't work as specified, etc...</td></tr>
@@ -26,6 +37,7 @@ What kind of issue. Every issue should have one of these.
 </table>
 
 ### Categories
+
 Where the issue occurs.
 <table>
 <tr><th>Label</th><th>Description</th></tr>
@@ -35,7 +47,9 @@ Where the issue occurs.
 </table>
 
 ### Platforms
-On which platform (operating system) the issue occurs. These should only be used if an issue occurs on some platforms, but not others.
+
+On which platform (operating system) the issue occurs. These should only be
+used if an issue occurs on some platforms, but not others.
 
 - Windows XP
 - Windows 7
