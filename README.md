@@ -11,8 +11,7 @@ instead.
 ## Things
 
 - Try to create steps that reproduce a bug.
-- Create a `.rbxl` or `.rbxm` file that shows a bug in action (no pull
-  request!).
+- Create a place or model file that shows a bug in action.
 - Don't group separate issues into one issue.
 - Comments that do not contribute may be removed.
 - If you don't understand what's going on, or you can't reproduce a bug, don't
