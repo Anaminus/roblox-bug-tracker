@@ -65,3 +65,49 @@ used if an issue occurs on some platforms, but not others.
 - iOS
 
 Some of these labels may not actually exist until they are needed.
+
+## Submitting Issue Files
+
+You may submit files related to a certain issue by making a pull request.
+These files are located in the `issues` folder.
+
+1. Fork this repository.
+2. Go to the `issues` folder, and add a new folder. Make sure its name is the
+   number of the related issue (i.e. "100" for issue [#100](#100)).
+3. Add your files. Good files are places files (`.rbxl`, `.rbxlx`), model
+   files (`.rbxm`), and READMEs, containing instructions.
+4. [Create a new pull request](https://help.github.com/articles/creating-a-pull-request).
+5. When adding a title and description, refer to the related issue.
+
+If files already exist for an issue, you can create a sub-folder and put your
+files there. Try to give the folder a name that suggests why it is separate
+from existing files. You may also move the existing files to their own sub-
+folder, if necessary. Example:
+
+Existing:
+
+	issues
+		100
+			ExistingFile.rbxl
+			README.md
+
+Updated:
+
+	issues
+		100
+			ExistingFiles
+				ExistingFile.rbxl
+				README.md
+			YourNewFiles
+				YourFile.rbxl
+				README.md
+
+### Place files
+
+Try to save places as `.rbxlx` instead of `.rbxl`, since the file's contents
+are easier to read.
+
+### Make a pull request separate from the related issue!
+
+If you submit an issue as a pull request, I wont be able to merge it without
+also closing the issue.
