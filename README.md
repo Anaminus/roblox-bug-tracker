@@ -36,6 +36,13 @@ What kind of issue. Every issue should have one of these.
 <tr><td> tracker </td><td>Issues related to this bug tracker.</td></tr>
 </table>
 
+### Status
+
+<table>
+<tr><td> willfix </td><td>Issues where it is confirmed that they will be fixed/added.</td></tr>
+<tr><td> wontfix </td><td>Issues where it is confirmed that they will not be fixed/added.</td></tr>
+</table>
+
 ### Categories
 
 Where the issue occurs.
