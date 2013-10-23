@@ -8,7 +8,7 @@ For long-winded feature requests, try checking out **[roblox-enhancement-proposa
 ## Things
 - Try to create steps that reproduce a bug.
 - Create a `.rbxl` or `.rbxm` file that shows a bug in action (no pull request!).
-- Don't group seperate issues into one issue.
+- Don't group separate issues into one issue.
 - Comments that do not contribute may be removed.
 - If you don't understand what's going on, or you can't reproduce a bug, don't bother submitting an issue.
 
@@ -29,7 +29,7 @@ What kind of issue. Every issue should have one of these.
 Where the issue occurs.
 <table>
 <tr><th>Label</th><th>Description</th></tr>
-<tr><td> Game Engine </td><td>Issues occuring in-game, Instances, the Lua API, etc...</td></tr>
+<tr><td> Game Engine </td><td>Issues occurring in-game, Instances, the Lua API, etc...</td></tr>
 <tr><td> Studio 2013 </td><td>Issues related to the UI or functionality of Roblox Studio 2013 (formerly 2.0), things that occur only in Studio 2013. <b>Note the difference between the studio and the engine!</b></td></tr>
 <tr><td> Website </td><td>Issues on Roblox websites; roblox.com, m.roblox.com, wiki.roblox.com, etc. <b>Test sites are not included!</b> (i.e. gametest, sitetest)</td></tr>
 </table>
