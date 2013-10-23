@@ -73,7 +73,7 @@ These files are located in the `issues` folder.
 
 1. Fork this repository.
 2. Go to the `issues` folder, and add a new folder. Make sure its name is the
-   number of the related issue (i.e. "100" for issue [#100](#100)).
+   number of the related issue (i.e. "100" for issue #100).
 3. Add your files. Good files are places files (`.rbxl`, `.rbxlx`), model
    files (`.rbxm`), and READMEs, containing instructions.
 4. [Create a new pull request](https://help.github.com/articles/creating-a-pull-request).
