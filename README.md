@@ -50,6 +50,7 @@ Where the issue occurs.
 <tr><td> Player </td><td>Issues that occur only on the Roblox client (RobloxPlayer).</td></tr>
 <tr><td> Studio </td><td>Issues related to the UI or functionality of Roblox Studio 2013, or issues that occur only in Studio 2013.</td></tr>
 <tr><td> Game Engine </td><td>Issues occurring in-game, Instances, the Lua API, etc... Applies to both the Studio and the Player.</td></tr>
+<tr><td> CoreLib </td><td>Issues occuring in CoreScripts, libraries, and other Lua-based internals.</td></tr>
 <tr><td> Website </td><td>Issues on Roblox websites; roblox.com, m.roblox.com, wiki.roblox.com, etc. <b>robloxlabs.com is not included!</b></td></tr>
 </table>
 
