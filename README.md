@@ -1,6 +1,6 @@
 # Roblox Bug Tracker
 
-An unofficial tracker for bugs that I encounter on [Roblox](www.roblox.com).
+An unofficial tracker for bugs encountered on [Roblox](http://www.roblox.com).
 
 **[Go to the Issue Tracker](https://github.com/Anaminus/roblox-bug-tracker/issues)**
 
