@@ -44,7 +44,7 @@ Label     | Description
 willfix   | Confirmed by a developer that the issue will be fixed/added.
 wontfix   | Confirmed by a developer that the issue will not be fixed/added.
 duplicate | A similar issue has already been submitted.
-invalid   | Does not follow the format of this tracker, or should be submitted elsewhere.
+invalid   | Not an issue (i.e. expected behavior), should be submitted elsewhere, or does not follow the format of this tracker.
 
 ### Categories
 
