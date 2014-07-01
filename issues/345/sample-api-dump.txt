@@ -1,0 +1,63 @@
+Class Instance [notbrowsable]
+	Property bool Instance.Archivable
+	Property string Instance.ClassName [readonly]
+	Property int Instance.DataCost [readonly] [RobloxPlaceSecurity]
+	Property bool Instance.RobloxLocked [PluginSecurity]
+	Property bool Instance.archivable [hidden]
+	Property string Instance.className [deprecated] [readonly]
+	Function void Instance:ClearAllChildren()
+	Function Instance Instance:FindFirstChild(string name, bool recursive = false)
+	Function string Instance:GetDebugId(int scopeLength = 4) [notbrowsable] [PluginSecurity]
+	Function bool Instance:IsA(string className)
+	Function Instance Instance:findFirstChild(string name, bool recursive = false) [deprecated]
+	YieldFunction Instance Instance:WaitForChild(string childName)
+	Event Instance.AncestryChanged(Instance child, Instance parent)
+	Event Instance.childAdded(Instance child) [deprecated]
+Class Hat : Accoutrement
+Class AnimationTrack : Instance
+	Function void AnimationTrack:Play(float fadeTime = 0.100000001, float weight = 1, float speed = 1)
+Class AssetService : Instance
+	Function void AssetService:SetAssetRevertUrl(string revertUrl) [LocalUserSecurity]
+	YieldFunction int AssetService:CreatePlaceAsync(string placeName, int templatePlaceID, string description = )
+	YieldFunction bool AssetService:SetPlacePermissions(int placeId, AccessType accessType = Everyone, Array inviteList = {})
+Class StarterGui : BasePlayerGui
+	Event StarterGui.CoreGuiChangedSignal(CoreGuiType coreGuiType, bool enabled) [RobloxScriptSecurity]
+Class DataStoreService : Instance
+	Function Instance DataStoreService:GetDataStore(string name, string scope = global)
+Class FaceInstance : Instance [notbrowsable]
+Class GuiObject : GuiBase2d [notbrowsable]
+	Property BrickColor GuiObject.BackgroundColor [deprecated] [hidden]
+	Function bool GuiObject:TweenPosition(UDim2 endPosition, EasingDirection easingDirection = Out, EasingStyle easingStyle = Quad, float time = 1, bool override = false, Function callback = nil)
+Class GuiMain : ScreenGui [deprecated]
+Class HttpService : Instance [notCreatable]
+	YieldFunction string HttpService:PostAsync(string url, string data, HttpContentType content_type = ApplicationJson)
+Class MarketplaceService : Instance
+	Function void MarketplaceService:PromptProductPurchase(Instance player, int productId, bool equipIfPurchased = true, CurrencyType currencyType = Default)
+	YieldFunction Dictionary MarketplaceService:GetProductInfo(int assetId, InfoType infoType = Asset)
+	Event MarketplaceService.ClientLuaDialogRequested(Tuple arguments) [RobloxScriptSecurity]
+	Callback ProductPurchaseDecision MarketplaceService.ProcessReceipt(Dictionary receiptInfo)
+Class ServerReplicator : NetworkReplicator [notCreatable]
+	Callback FilterResult ServerReplicator.DeleteFilter(Instance deletingItem) [noyield] [RobloxPlaceSecurity]
+Class PVInstance : Instance [notbrowsable]
+	Property CoordinateFrame PVInstance.CoordinateFrame [deprecated] [writeonly]
+Class Player : Instance
+	Property string Player.CharacterAppearance [notbrowsable]
+	YieldFunction string Player:GetWebPersonalServerRank() [backend] [LocalUserSecurity]
+	YieldFunction bool Player:SetWebPersonalServerRank(int rank) [WritePlayerSecurity]
+Class DataModel : ServiceProvider
+	Function string DataModel:HttpPost(string url, string data, bool synchronous = false, string contentType = */*) [RobloxScriptSecurity]
+	YieldFunction string DataModel:HttpPostAsync(string url, string data, string contentType = */*) [RobloxScriptSecurity]
+	Callback Tuple DataModel.OnClose()
+	Callback bool DataModel.RequestShutdown() [noyield] [RobloxScriptSecurity]
+Enum AASamples
+	EnumItem AASamples.None : 1
+	EnumItem AASamples.4 : 4
+	EnumItem AASamples.8 : 8
+Enum JointType
+	EnumItem JointType.None : 13
+	EnumItem JointType.Rotate : 6
+	EnumItem JointType.RotateP : 7
+	EnumItem JointType.RotateV : 8
+	EnumItem JointType.Glue : 9
+	EnumItem JointType.Weld : 1
+	EnumItem JointType.Snap : 3
