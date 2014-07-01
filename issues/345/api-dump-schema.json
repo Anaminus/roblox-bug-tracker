@@ -130,7 +130,7 @@
 			"title":       "Function",
 			"description": "",
 			"type":        "object",
-			"required":    ["MemberType","Name","ValueType"],
+			"required":    ["MemberType","Name","ReturnType","Arguments"],
 			"properties":  {
 				"MemberType": {
 					"description": "",
@@ -175,7 +175,7 @@
 			"title":       "YieldFunction",
 			"description": "",
 			"type":        "object",
-			"required":    ["MemberType","Name","ValueType"],
+			"required":    ["MemberType","Name","ReturnType","Arguments"],
 			"properties":  {
 				"MemberType": {
 					"description": "",
@@ -220,7 +220,7 @@
 			"title":       "Event",
 			"description": "",
 			"type":        "object",
-			"required":    ["MemberType","Name","ValueType"],
+			"required":    ["MemberType","Name","Arguments"],
 			"properties":  {
 				"MemberType": {
 					"description": "",
@@ -261,7 +261,7 @@
 			"title":       "Callback",
 			"description": "",
 			"type":        "object",
-			"required":    ["MemberType","Name","ValueType"],
+			"required":    ["MemberType","Name","ReturnType","Arguments"],
 			"properties":  {
 				"MemberType": {
 					"description": "",
@@ -366,11 +366,11 @@
 			"description": "A single enumerator of the enum.",
 			"type":        "object",
 			"properties":  {
-				"Name":{
+				"Name": {
 					"description": "The name of the EnumItem.",
 					"type":        "string"
 				},
-				"Value":{
+				"Value": {
 					"description": "The numerical value of the EnumItem.",
 					"type":        "integer",
 					"minimum":     0
