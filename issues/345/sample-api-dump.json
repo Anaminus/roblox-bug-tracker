@@ -1,0 +1,642 @@
+{
+	"Classes": [
+		{
+			"Name": "Instance",
+			"Browsable": false,
+			"Members": [
+				{
+					"MemberType": "Property",
+					"Name": "Archivable",
+					"ValueType": "bool"
+				},
+				{
+					"MemberType": "Property",
+					"Name": "ClassName",
+					"ReadOnly": true,
+					"ValueType": "string"
+				},
+				{
+					"MemberType": "Property",
+					"Name": "DataCost",
+					"Security": "RobloxPlaceSecurity",
+					"ReadOnly": true,
+					"ValueType": "int"
+				},
+				{
+					"MemberType": "Property",
+					"Name": "RobloxLocked",
+					"Security": "PluginSecurity",
+					"ValueType": "bool"
+				},
+				{
+					"MemberType": "Property",
+					"Name": "archivable",
+					"Hidden": true,
+					"ValueType": "bool"
+				},
+				{
+					"MemberType": "Property",
+					"Name": "className",
+					"Deprecated": true,
+					"ReadOnly": true,
+					"ValueType": "string"
+				},
+				{
+					"MemberType": "Function",
+					"Name": "ClearAllChildren",
+					"ReturnType": "void",
+					"Arguments": []
+				},
+				{
+					"MemberType": "Function",
+					"Name": "FindFirstChild",
+					"ReturnType": "Instance",
+					"Arguments": [
+						{
+							"Type": "string",
+							"Name": "name",
+							"Default": null
+						},
+						{
+							"Type": "bool",
+							"Name": "recursive",
+							"Default": "false"
+						}
+					]
+				},
+				{
+					"MemberType": "Function",
+					"Name": "GetDebugId",
+					"Security": "PluginSecurity",
+					"Browsable": false,
+					"ReturnType": "string",
+					"Arguments": [
+						{
+							"Type": "int",
+							"Name": "scopeLength",
+							"Default": "4"
+						}
+					]
+				},
+				{
+					"MemberType": "Function",
+					"Name": "IsA",
+					"ReturnType": "bool",
+					"Arguments": [
+						{
+							"Type": "string",
+							"Name": "className",
+							"Default": null
+						}
+					]
+				},
+				{
+					"MemberType": "Function",
+					"Name": "findFirstChild",
+					"Deprecated": true,
+					"ReturnType": "Instance",
+					"Arguments": [
+						{
+							"Type": "string",
+							"Name": "name",
+							"Default": null
+						},
+						{
+							"Type": "bool",
+							"Name": "recursive",
+							"Default": "false"
+						}
+					]
+				},
+				{
+					"MemberType": "YieldFunction",
+					"Name": "WaitForChild",
+					"ReturnType": "Instance",
+					"Arguments": [
+						{
+							"Type": "string",
+							"Name": "childName",
+							"Default": null
+						}
+					]
+				},
+				{
+					"MemberType": "Event",
+					"Name": "AncestryChanged",
+					"Arguments": [
+						{
+							"Type": "Instance",
+							"Name": "child"
+						},
+						{
+							"Type": "Instance",
+							"Name": "parent"
+						}
+					]
+				},
+				{
+					"MemberType": "Event",
+					"Name": "childAdded",
+					"Deprecated": true,
+					"Arguments": [
+						{
+							"Type": "Instance",
+							"Name": "child"
+						}
+					]
+				}
+			]
+		},
+		{
+			"Name": "Hat",
+			"Superclass": "Accoutrement",
+			"Members": []
+		},
+		{
+			"Name": "AnimationTrack",
+			"Superclass": "Instance",
+			"Members": [
+				{
+					"MemberType": "Function",
+					"Name": "Play",
+					"ReturnType": "void",
+					"Arguments": [
+						{
+							"Type": "float",
+							"Name": "fadeTime",
+							"Default": "0.100000001"
+						},
+						{
+							"Type": "float",
+							"Name": "weight",
+							"Default": "1"
+						},
+						{
+							"Type": "float",
+							"Name": "speed",
+							"Default": "1"
+						}
+					]
+				}
+			]
+		},
+		{
+			"Name": "AssetService",
+			"Superclass": "Instance",
+			"Members": [
+				{
+					"MemberType": "Function",
+					"Name": "SetAssetRevertUrl",
+					"Security": "LocalUserSecurity",
+					"ReturnType": "void",
+					"Arguments": [
+						{
+							"Type": "string",
+							"Name": "revertUrl",
+							"Default": null
+						}
+					]
+				},
+				{
+					"MemberType": "YieldFunction",
+					"Name": "CreatePlaceAsync",
+					"ReturnType": "int",
+					"Arguments": [
+						{
+							"Type": "string",
+							"Name": "placeName",
+							"Default": null
+						},
+						{
+							"Type": "int",
+							"Name": "templatePlaceID",
+							"Default": null
+						},
+						{
+							"Type": "string",
+							"Name": "description",
+							"Default": ""
+						}
+					]
+				},
+				{
+					"MemberType": "YieldFunction",
+					"Name": "SetPlacePermissions",
+					"ReturnType": "bool",
+					"Arguments": [
+						{
+							"Type": "int",
+							"Name": "placeId",
+							"Default": null
+						},
+						{
+							"Type": "AccessType",
+							"Name": "accessType",
+							"Default": "Everyone"
+						},
+						{
+							"Type": "Array",
+							"Name": "inviteList",
+							"Default": "{}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"Name": "StarterGui",
+			"Superclass": "BasePlayerGui",
+			"Members": [
+				{
+					"MemberType": "Event",
+					"Name": "CoreGuiChangedSignal",
+					"Security": "RobloxScriptSecurity",
+					"Arguments": [
+						{
+							"Type": "CoreGuiType",
+							"Name": "coreGuiType"
+						},
+						{
+							"Type": "bool",
+							"Name": "enabled"
+						}
+					]
+				}
+			]
+		},
+		{
+			"Name": "DataStoreService",
+			"Superclass": "Instance",
+			"Members": [
+				{
+					"MemberType": "Function",
+					"Name": "GetDataStore",
+					"ReturnType": "Instance",
+					"Arguments": [
+						{
+							"Type": "string",
+							"Name": "name",
+							"Default": null
+						},
+						{
+							"Type": "string",
+							"Name": "scope",
+							"Default": "global"
+						}
+					]
+				}
+			]
+		},
+		{
+			"Name": "FaceInstance",
+			"Superclass": "Instance",
+			"Browsable": false,
+			"Members": []
+		},
+		{
+			"Name": "GuiObject",
+			"Superclass": "GuiBase2d",
+			"Browsable": false,
+			"Members": [
+				{
+					"MemberType": "Property",
+					"Name": "BackgroundColor",
+					"Deprecated": true,
+					"Hidden": true,
+					"ValueType": "BrickColor"
+				},
+				{
+					"MemberType": "Function",
+					"Name": "TweenPosition",
+					"ReturnType": "bool",
+					"Arguments": [
+						{
+							"Type": "UDim2",
+							"Name": "endPosition",
+							"Default": null
+						},
+						{
+							"Type": "EasingDirection",
+							"Name": "easingDirection",
+							"Default": "Out"
+						},
+						{
+							"Type": "EasingStyle",
+							"Name": "easingStyle",
+							"Default": "Quad"
+						},
+						{
+							"Type": "float",
+							"Name": "time",
+							"Default": "1"
+						},
+						{
+							"Type": "bool",
+							"Name": "override",
+							"Default": "false"
+						},
+						{
+							"Type": "Function",
+							"Name": "callback",
+							"Default": "nil"
+						}
+					]
+				}
+			]
+		},
+		{
+			"Name": "GuiMain",
+			"Superclass": "ScreenGui",
+			"Deprecated": true,
+			"Members": []
+		},
+		{
+			"Name": "HttpService",
+			"Superclass": "Instance",
+			"Creatable": false,
+			"Members": [
+				{
+					"MemberType": "YieldFunction",
+					"Name": "PostAsync",
+					"ReturnType": "string",
+					"Arguments": [
+						{
+							"Type": "string",
+							"Name": "url",
+							"Default": null
+						},
+						{
+							"Type": "string",
+							"Name": "data",
+							"Default": null
+						},
+						{
+							"Type": "HttpContentType",
+							"Name": "content_type",
+							"Default": "ApplicationJson"
+						}
+					]
+				}
+			]
+		},
+		{
+			"Name": "MarketplaceService",
+			"Superclass": "Instance",
+			"Members": [
+				{
+					"MemberType": "Function",
+					"Name": "PromptProductPurchase",
+					"ReturnType": "void",
+					"Arguments": [
+						{
+							"Type": "Instance",
+							"Name": "player",
+							"Default": null
+						},
+						{
+							"Type": "int",
+							"Name": "productId",
+							"Default": null
+						},
+						{
+							"Type": "bool",
+							"Name": "equipIfPurchased",
+							"Default": "true"
+						},
+						{
+							"Type": "CurrencyType",
+							"Name": "currencyType",
+							"Default": "Default"
+						}
+					]
+				},
+				{
+					"MemberType": "YieldFunction",
+					"Name": "GetProductInfo",
+					"ReturnType": "Dictionary",
+					"Arguments": [
+						{
+							"Type": "int",
+							"Name": "assetId",
+							"Default": null
+						},
+						{
+							"Type": "InfoType",
+							"Name": "infoType",
+							"Default": "Asset"
+						}
+					]
+				},
+				{
+					"MemberType": "Event",
+					"Name": "ClientLuaDialogRequested",
+					"Security": "RobloxScriptSecurity",
+					"Arguments": [
+						{
+							"Type": "Tuple",
+							"Name": "arguments"
+						}
+					]
+				},
+				{
+					"MemberType": "Callback",
+					"Name": "ProcessReceipt",
+					"ReturnType": "ProductPurchaseDecision",
+					"Arguments": [
+						{
+							"Type": "Dictionary",
+							"Name": "receiptInfo"
+						}
+					]
+				}
+			]
+		},
+		{
+			"Name": "ServerReplicator",
+			"Superclass": "NetworkReplicator",
+			"Creatable": false,
+			"Members": [
+				{
+					"MemberType": "Callback",
+					"Name": "DeleteFilter",
+					"Security": "RobloxPlaceSecurity",
+					"ReturnType": "FilterResult",
+					"Arguments": [
+						{
+							"Type": "Instance",
+							"Name": "deletingItem"
+						}
+					]
+				}
+			]
+		},
+		{
+			"Name": "PVInstance",
+			"Superclass": "Instance",
+			"Browsable": false,
+			"Members": [
+				{
+					"MemberType": "Property",
+					"Name": "CoordinateFrame",
+					"Deprecated": true,
+					"WriteOnly": true,
+					"ValueType": "CoordinateFrame"
+				}
+			]
+		},
+		{
+			"Name": "Player",
+			"Superclass": "Instance",
+			"Members": [
+				{
+					"MemberType": "Property",
+					"Name": "CharacterAppearance",
+					"Browsable": false,
+					"ValueType": "string"
+				},
+				{
+					"MemberType": "YieldFunction",
+					"Name": "GetWebPersonalServerRank",
+					"Security": "LocalUserSecurity",
+					"ReturnType": "string",
+					"Arguments": []
+				},
+				{
+					"MemberType": "YieldFunction",
+					"Name": "SetWebPersonalServerRank",
+					"Security": "WritePlayerSecurity",
+					"ReturnType": "bool",
+					"Arguments": [
+						{
+							"Type": "int",
+							"Name": "rank",
+							"Default": null
+						}
+					]
+				}
+			]
+		},
+		{
+			"Name": "DataModel",
+			"Superclass": "ServiceProvider",
+			"Members": [
+				{
+					"MemberType": "Function",
+					"Name": "HttpPost",
+					"Security": "RobloxScriptSecurity",
+					"ReturnType": "string",
+					"Arguments": [
+						{
+							"Type": "string",
+							"Name": "url",
+							"Default": null
+						},
+						{
+							"Type": "string",
+							"Name": "data",
+							"Default": null
+						},
+						{
+							"Type": "bool",
+							"Name": "synchronous",
+							"Default": "false"
+						},
+						{
+							"Type": "string",
+							"Name": "contentType",
+							"Default": "*/*"
+						}
+					]
+				},
+				{
+					"MemberType": "YieldFunction",
+					"Name": "HttpPostAsync",
+					"Security": "RobloxScriptSecurity",
+					"ReturnType": "string",
+					"Arguments": [
+						{
+							"Type": "string",
+							"Name": "url",
+							"Default": null
+						},
+						{
+							"Type": "string",
+							"Name": "data",
+							"Default": null
+						},
+						{
+							"Type": "string",
+							"Name": "contentType",
+							"Default": "*/*"
+						}
+					]
+				},
+				{
+					"MemberType": "Callback",
+					"Name": "OnClose",
+					"ReturnType": "Tuple",
+					"Arguments": []
+				},
+				{
+					"MemberType": "Callback",
+					"Name": "RequestShutdown",
+					"Security": "RobloxScriptSecurity",
+					"ReturnType": "bool",
+					"Arguments": []
+				}
+			]
+		}
+	],
+	"Enums": [
+		{
+			"Name": "AASamples",
+			"Items": [
+				{
+					"Name": "None",
+					"Value": 1
+				},
+				{
+					"Name": "4",
+					"Value": 4
+				},
+				{
+					"Name": "8",
+					"Value": 8
+				}
+			]
+		},
+		{
+			"Name": "JointType",
+			"Items": [
+				{
+					"Name": "None",
+					"Value": 13
+				},
+				{
+					"Name": "Rotate",
+					"Value": 6
+				},
+				{
+					"Name": "RotateP",
+					"Value": 7
+				},
+				{
+					"Name": "RotateV",
+					"Value": 8
+				},
+				{
+					"Name": "Glue",
+					"Value": 9
+				},
+				{
+					"Name": "Weld",
+					"Value": 1
+				},
+				{
+					"Name": "Snap",
+					"Value": 3
+				}
+			]
+		}
+	]
+}

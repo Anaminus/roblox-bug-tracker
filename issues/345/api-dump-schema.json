@@ -1,0 +1,382 @@
+{
+	"$schema":    "http://json-schema.org/draft-04/schema#",
+	"title":      "ROBLOX Lua API",
+	"type":       "object",
+	"required":   ["Classes","Enums"],
+	"properties": {
+		"Classes": {
+			"description": "A list of classes in the API.",
+			"type":        "array",
+			"items":       {"$ref": "#/definitions/Class"}
+		},
+		"Enums": {
+			"description": "A list of enums in the API.",
+			"type":        "array",
+			"items":       {"$ref": "#/definitions/Enum"}
+		}
+	},
+	"definitions": {
+		"Class": {
+			"title":       "Class",
+			"description": "Describes a single ROBLOX class.",
+			"type":        "object",
+			"required":    ["Name","Members"],
+			"properties":  {
+				"Name": {
+					"description": "The name of the class.",
+					"type":        "string"
+				},
+				"Superclass": {
+					"description": "The name of the class this class immediately inherits from.",
+					"anyOf":       [{"type":"string"},{"type":"null"}],
+					"default":     null
+				},
+				"Creatable": {
+					"description": "Whether the class can be created with Instance.new.",
+					"type":        "bool",
+					"default":     true
+				},
+				"Insertable": {
+					"description": "Whether the class can be inserted from a Studio menu.",
+					"type":        "bool",
+					"default":     true
+				},
+				"Browsable": {
+					"description": "Whether the class can be viewed in the object browser.",
+					"type":        "bool",
+					"default":     true
+				},
+				"Preliminary": {
+					"description": "Whether the class is incomplete/subject to change.",
+					"type":        "bool",
+					"default":     false
+				},
+				"Deprecated": {
+					"description": "Whether the class is no longer supported/obsolete.",
+					"type":        "bool",
+					"default":     false
+				},
+				"Members": {
+					"description": "A list of members of the class.",
+					"type":        "array",
+					"items":       {
+						"anyOf": [
+							{"$ref": "#/definitions/Property"},
+							{"$ref": "#/definitions/Function"},
+							{"$ref": "#/definitions/YieldFunction"},
+							{"$ref": "#/definitions/Event"},
+							{"$ref": "#/definitions/Callback"}
+						]
+					}
+				}
+			}
+		},
+		"Property": {
+			"title":       "Property",
+			"description": "",
+			"type":        "object",
+			"required":    ["MemberType","Name","ValueType"],
+			"properties":  {
+				"MemberType": {
+					"description": "",
+					"type":        "string"
+				},
+				"Name": {
+					"description": "",
+					"type":        "string"
+				},
+				"ValueType": {
+					"description": "",
+					"type":        "string"
+				},
+				"Security": {
+					"description": "",
+					"anyOf":       [{"type":"string"},{"type":"null"}],
+					"Default":     null
+				},
+				"Browsable": {
+					"description": "",
+					"type":        "bool",
+					"Default":     true
+				},
+				"Preliminary": {
+					"description": "",
+					"type":        "bool",
+					"Default":     false
+				},
+				"Deprecated": {
+					"description": "",
+					"type":        "bool",
+					"Default":     false
+				},
+				"ReadOnly": {
+					"description": "",
+					"type":        "bool",
+					"Default":     false
+				},
+				"WriteOnly": {
+					"description": "",
+					"type":        "bool",
+					"Default":     false
+				},
+				"Hidden": {
+					"description": "",
+					"type":        "bool",
+					"Default":     false
+				}
+			}
+		},
+		"Function": {
+			"title":       "Function",
+			"description": "",
+			"type":        "object",
+			"required":    ["MemberType","Name","ValueType"],
+			"properties":  {
+				"MemberType": {
+					"description": "",
+					"type":        "string"
+				},
+				"Name": {
+					"description": "",
+					"type":        "string"
+				},
+				"ReturnType": {
+					"description:": "",
+					"type":         "string"
+				},
+				"Arguments": {
+					"descriptions": "",
+					"type":         "array",
+					"items":        {"$ref": "#/definitions/FuncArgument"}
+				},
+				"Security": {
+					"description": "",
+					"anyOf":       [{"type":"string"},{"type":"null"}],
+					"Default":     null
+				},
+				"Browsable": {
+					"description": "",
+					"type":        "bool",
+					"Default":     true
+				},
+				"Preliminary": {
+					"description": "",
+					"type":        "bool",
+					"Default":     false
+				},
+				"Deprecated": {
+					"description": "",
+					"type":        "bool",
+					"Default":     false
+				}
+			}
+		},
+		"YieldFunction": {
+			"title":       "YieldFunction",
+			"description": "",
+			"type":        "object",
+			"required":    ["MemberType","Name","ValueType"],
+			"properties":  {
+				"MemberType": {
+					"description": "",
+					"type":        "string"
+				},
+				"Name": {
+					"description": "",
+					"type":        "string"
+				},
+				"ReturnType": {
+					"description:": "",
+					"type":         "string"
+				},
+				"Arguments": {
+					"descriptions": "",
+					"type":         "array",
+					"items":        {"$ref": "#/definitions/FuncArgument"}
+				},
+				"Security": {
+					"description": "",
+					"anyOf":       [{"type":"string"},{"type":"null"}],
+					"Default":     null
+				},
+				"Browsable": {
+					"description": "",
+					"type":        "bool",
+					"Default":     true
+				},
+				"Preliminary": {
+					"description": "",
+					"type":        "bool",
+					"Default":     false
+				},
+				"Deprecated": {
+					"description": "",
+					"type":        "bool",
+					"Default":     false
+				}
+			}
+		},
+		"Event": {
+			"title":       "Event",
+			"description": "",
+			"type":        "object",
+			"required":    ["MemberType","Name","ValueType"],
+			"properties":  {
+				"MemberType": {
+					"description": "",
+					"type":        "string"
+				},
+				"Name": {
+					"description": "",
+					"type":        "string"
+				},
+				"Arguments": {
+					"descriptions": "",
+					"type":         "array",
+					"items":        {"$ref": "#/definitions/Argument"}
+				},
+				"Security": {
+					"description": "",
+					"anyOf":       [{"type":"string"},{"type":"null"}],
+					"Default":     null
+				},
+				"Browsable": {
+					"description": "",
+					"type":        "bool",
+					"Default":     true
+				},
+				"Preliminary": {
+					"description": "",
+					"type":        "bool",
+					"Default":     false
+				},
+				"Deprecated": {
+					"description": "",
+					"type":        "bool",
+					"Default":     false
+				}
+			}
+		},
+		"Callback": {
+			"title":       "Callback",
+			"description": "",
+			"type":        "object",
+			"required":    ["MemberType","Name","ValueType"],
+			"properties":  {
+				"MemberType": {
+					"description": "",
+					"type":        "string"
+				},
+				"Name": {
+					"description": "",
+					"type":        "string"
+				},
+				"ReturnType": {
+					"description:": "",
+					"type":         "string"
+				},
+				"Arguments": {
+					"descriptions": "",
+					"type":         "array",
+					"items":        {"$ref": "#/definitions/Argument"}
+				},
+				"Security": {
+					"description": "",
+					"anyOf":       [{"type":"string"},{"type":"null"}],
+					"Default":     null
+				},
+				"Browsable": {
+					"description": "",
+					"type":        "bool",
+					"Default":     true
+				},
+				"Preliminary": {
+					"description": "",
+					"type":        "bool",
+					"Default":     false
+				},
+				"Deprecated": {
+					"description": "",
+					"type":        "bool",
+					"Default":     false
+				},
+				"NoYield": {
+					"description": "",
+					"type":        "bool",
+					"Default":     false
+				}
+			}
+		},
+		"FuncArgument": {
+			"title":       "FuncArgument",
+			"description": "Describes a single argument of a function.",
+			"type":        "object",
+			"required":    ["Type","Name"],
+			"properties":  {
+				"Type":{
+					"description": "",
+					"type":        "string"
+				},
+				"Name":{
+					"description": "",
+					"type":        "string"
+				},
+				"Default":{
+					"description": "",
+					"anyOf":       [{"type":"string"},{"type":"null"}],
+					"default":     null
+				}
+			}
+		},
+		"Argument": {
+			"title":       "Argument",
+			"description": "Describes a single argument of an event or callback.",
+			"type":        "object",
+			"required":    ["Type","Name"],
+			"properties":  {
+				"Type":{
+					"description": "",
+					"type":        "string"
+				},
+				"Name":{
+					"description": "",
+					"type":        "string"
+				}
+			}
+		},
+		"Enum": {
+			"title":       "Enum",
+			"description": "Describes a single ROBLOX Enum value.",
+			"type":        "object",
+			"required":    ["Name","Items"],
+			"properties":  {
+				"Name": {
+					"description": "The name of the enum.",
+					"type":        "string"
+				},
+				"Items": {
+					"description": "A list of enumerators of the enum.",
+					"type":        "array",
+					"items":       {"$ref": "#/definitions/EnumItem"}
+				}
+			}
+		},
+		"EnumItem": {
+			"title":       "EnumItem",
+			"description": "A single enumerator of the enum.",
+			"type":        "object",
+			"properties":  {
+				"Name":{
+					"description": "The name of the EnumItem.",
+					"type":        "string"
+				},
+				"Value":{
+					"description": "The numerical value of the EnumItem.",
+					"type":        "integer",
+					"minimum":     0
+				}
+			},
+			"required": ["Name","Value"]
+		}
+	}
+}
