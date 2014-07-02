@@ -28,11 +28,11 @@
 				},
 				"Superclass": {
 					"description": "The name of the class this class immediately inherits from.",
-					"anyOf":       [{"type":"string"},{"type":"null"}],
+					"anyOf":       [{"type": "string"},{"type": "null"}],
 					"default":     null
 				},
 				"Creatable": {
-					"description": "Whether the class can be created with Instance.new.",
+					"description": "Whether the class can be created with Instance.new. Corresponds to the [notCreatable] tag.",
 					"type":        "bool",
 					"default":     true
 				},
@@ -42,17 +42,17 @@
 					"default":     true
 				},
 				"Browsable": {
-					"description": "Whether the class can be viewed in the object browser.",
+					"description": "Whether the class can be viewed in the Studio's object browser. Corresponds to the [notbrowsable] tag.",
 					"type":        "bool",
 					"default":     true
 				},
 				"Preliminary": {
-					"description": "Whether the class is incomplete/subject to change.",
+					"description": "Whether the class is incomplete/subject to change. Corresponds to the [preliminary] tag.",
 					"type":        "bool",
 					"default":     false
 				},
 				"Deprecated": {
-					"description": "Whether the class is no longer supported/obsolete.",
+					"description": "Whether the class is no longer supported/obsolete. Corresponds to the [deprecated] tag.",
 					"type":        "bool",
 					"default":     false
 				},
@@ -78,49 +78,49 @@
 			"required":    ["MemberType","Name","ValueType"],
 			"properties":  {
 				"MemberType": {
-					"description": "",
+					"description": "The type of member. In this case, 'Property'.",
 					"type":        "string"
 				},
 				"Name": {
-					"description": "",
+					"description": "The name of the member.",
 					"type":        "string"
 				},
 				"ValueType": {
-					"description": "",
+					"description": "The property's value type.",
 					"type":        "string"
 				},
 				"Security": {
-					"description": "",
-					"anyOf":       [{"type":"string"},{"type":"null"}],
+					"description": "The member's security context. A value of null indicates no security.",
+					"anyOf":       [{"type": "string"},{"type": "null"}],
 					"Default":     null
 				},
 				"Browsable": {
-					"description": "",
+					"description": "Whether the member can be viewed in the Studio's object browser. Corresponds to the [notbrowsable] tag.",
 					"type":        "bool",
 					"Default":     true
 				},
 				"Preliminary": {
-					"description": "",
+					"description": "Whether the member is incomplete/subject to change. Corresponds to the [preliminary] tag.",
 					"type":        "bool",
 					"Default":     false
 				},
 				"Deprecated": {
-					"description": "",
+					"description": "Whether the member is no longer supported/obsolete. Corresponds to the [deprecated] tag.",
 					"type":        "bool",
 					"Default":     false
 				},
 				"ReadOnly": {
-					"description": "",
+					"description": "Whether the property can only be read, but not written.",
 					"type":        "bool",
 					"Default":     false
 				},
 				"WriteOnly": {
-					"description": "",
+					"description": "Whether the property can only be written, but not read.",
 					"type":        "bool",
 					"Default":     false
 				},
 				"Hidden": {
-					"description": "",
+					"description": "Whether the property is visible in the Studio's property panel.",
 					"type":        "bool",
 					"Default":     false
 				}
@@ -133,39 +133,39 @@
 			"required":    ["MemberType","Name","ReturnType","Arguments"],
 			"properties":  {
 				"MemberType": {
-					"description": "",
+					"description": "The type of member. In this case, 'Function'.",
 					"type":        "string"
 				},
 				"Name": {
-					"description": "",
+					"description": "The name of the member.",
 					"type":        "string"
 				},
 				"ReturnType": {
-					"description:": "",
+					"description:": "The type of value returned by the function.",
 					"type":         "string"
 				},
 				"Arguments": {
-					"descriptions": "",
+					"descriptions": "A list of the function's arguments.",
 					"type":         "array",
 					"items":        {"$ref": "#/definitions/FuncArgument"}
 				},
 				"Security": {
-					"description": "",
-					"anyOf":       [{"type":"string"},{"type":"null"}],
+					"description": "The member's security context. A value of null indicates no security.",
+					"anyOf":       [{"type": "string"},{"type": "null"}],
 					"Default":     null
 				},
 				"Browsable": {
-					"description": "",
+					"description": "Whether the member can be viewed in the Studio's object browser. Corresponds to the [notbrowsable] tag.",
 					"type":        "bool",
 					"Default":     true
 				},
 				"Preliminary": {
-					"description": "",
+					"description": "Whether the member is incomplete/subject to change. Corresponds to the [preliminary] tag.",
 					"type":        "bool",
 					"Default":     false
 				},
 				"Deprecated": {
-					"description": "",
+					"description": "Whether the member is no longer supported/obsolete. Corresponds to the [deprecated] tag.",
 					"type":        "bool",
 					"Default":     false
 				}
@@ -178,39 +178,39 @@
 			"required":    ["MemberType","Name","ReturnType","Arguments"],
 			"properties":  {
 				"MemberType": {
-					"description": "",
+					"description": "The type of member. In this case, 'YieldFunction'.",
 					"type":        "string"
 				},
 				"Name": {
-					"description": "",
+					"description": "The name of the member.",
 					"type":        "string"
 				},
 				"ReturnType": {
-					"description:": "",
+					"description:": "The type of value returned by the function.",
 					"type":         "string"
 				},
 				"Arguments": {
-					"descriptions": "",
+					"descriptions": "A list of the function's arguments.",
 					"type":         "array",
 					"items":        {"$ref": "#/definitions/FuncArgument"}
 				},
 				"Security": {
-					"description": "",
-					"anyOf":       [{"type":"string"},{"type":"null"}],
+					"description": "The member's security context. A value of null indicates no security.",
+					"anyOf":       [{"type": "string"},{"type": "null"}],
 					"Default":     null
 				},
 				"Browsable": {
-					"description": "",
+					"description": "Whether the member can be viewed in the Studio's object browser. Corresponds to the [notbrowsable] tag.",
 					"type":        "bool",
 					"Default":     true
 				},
 				"Preliminary": {
-					"description": "",
+					"description": "Whether the member is incomplete/subject to change. Corresponds to the [preliminary] tag.",
 					"type":        "bool",
 					"Default":     false
 				},
 				"Deprecated": {
-					"description": "",
+					"description": "Whether the member is no longer supported/obsolete. Corresponds to the [deprecated] tag.",
 					"type":        "bool",
 					"Default":     false
 				}
@@ -223,35 +223,35 @@
 			"required":    ["MemberType","Name","Arguments"],
 			"properties":  {
 				"MemberType": {
-					"description": "",
+					"description": "The type of member. In this case, 'Event'.",
 					"type":        "string"
 				},
 				"Name": {
-					"description": "",
+					"description": "The name of the member.",
 					"type":        "string"
 				},
 				"Arguments": {
-					"descriptions": "",
+					"descriptions": "A list of the arguments passed by the event.",
 					"type":         "array",
 					"items":        {"$ref": "#/definitions/Argument"}
 				},
 				"Security": {
-					"description": "",
-					"anyOf":       [{"type":"string"},{"type":"null"}],
+					"description": "The member's security context. A value of null indicates no security.",
+					"anyOf":       [{"type": "string"},{"type": "null"}],
 					"Default":     null
 				},
 				"Browsable": {
-					"description": "",
+					"description": "Whether the member can be viewed in the Studio's object browser. Corresponds to the [notbrowsable] tag.",
 					"type":        "bool",
 					"Default":     true
 				},
 				"Preliminary": {
-					"description": "",
+					"description": "Whether the member is incomplete/subject to change. Corresponds to the [preliminary] tag.",
 					"type":        "bool",
 					"Default":     false
 				},
 				"Deprecated": {
-					"description": "",
+					"description": "Whether the member is no longer supported/obsolete. Corresponds to the [deprecated] tag.",
 					"type":        "bool",
 					"Default":     false
 				}
@@ -264,44 +264,44 @@
 			"required":    ["MemberType","Name","ReturnType","Arguments"],
 			"properties":  {
 				"MemberType": {
-					"description": "",
+					"description": "The type of member. In this case, 'Callback'.",
 					"type":        "string"
 				},
 				"Name": {
-					"description": "",
+					"description": "The name of the member.",
 					"type":        "string"
 				},
 				"ReturnType": {
-					"description:": "",
+					"description:": "The type of value that the callback should return.",
 					"type":         "string"
 				},
 				"Arguments": {
-					"descriptions": "",
+					"descriptions": "A list of arguments passed to the callback.",
 					"type":         "array",
 					"items":        {"$ref": "#/definitions/Argument"}
 				},
 				"Security": {
-					"description": "",
-					"anyOf":       [{"type":"string"},{"type":"null"}],
+					"description": "The member's security context. A value of null indicates no security.",
+					"anyOf":       [{"type": "string"},{"type": "null"}],
 					"Default":     null
 				},
 				"Browsable": {
-					"description": "",
+					"description": "Whether the member can be viewed in the Studio's object browser. Corresponds to the [notbrowsable] tag.",
 					"type":        "bool",
 					"Default":     true
 				},
 				"Preliminary": {
-					"description": "",
+					"description": "Whether the member is incomplete/subject to change. Corresponds to the [preliminary] tag.",
 					"type":        "bool",
 					"Default":     false
 				},
 				"Deprecated": {
-					"description": "",
+					"description": "Whether the member is no longer supported/obsolete. Corresponds to the [deprecated] tag.",
 					"type":        "bool",
 					"Default":     false
 				},
 				"NoYield": {
-					"description": "",
+					"description": "Whether the callback can yield.",
 					"type":        "bool",
 					"Default":     false
 				}
@@ -314,16 +314,16 @@
 			"required":    ["Type","Name"],
 			"properties":  {
 				"Type":{
-					"description": "",
+					"description": "The value type of the argument.",
 					"type":        "string"
 				},
 				"Name":{
-					"description": "",
+					"description": "The name of the argument, for reference.",
 					"type":        "string"
 				},
 				"Default":{
-					"description": "",
-					"anyOf":       [{"type":"string"},{"type":"null"}],
+					"description": "A representation of the default value used for the argument if no value is given. A value of null indicates that the argument has no default value.",
+					"anyOf":       [{"type": "string"},{"type": "null"}],
 					"default":     null
 				}
 			}
@@ -335,11 +335,11 @@
 			"required":    ["Type","Name"],
 			"properties":  {
 				"Type":{
-					"description": "",
+					"description": "The value type of the argument.",
 					"type":        "string"
 				},
 				"Name":{
-					"description": "",
+					"description": "The name of the argument, for reference.",
 					"type":        "string"
 				}
 			}
@@ -365,6 +365,7 @@
 			"title":       "EnumItem",
 			"description": "A single enumerator of the enum.",
 			"type":        "object",
+			"required": ["Name","Value"],
 			"properties":  {
 				"Name": {
 					"description": "The name of the EnumItem.",
@@ -375,8 +376,7 @@
 					"type":        "integer",
 					"minimum":     0
 				}
-			},
-			"required": ["Name","Value"]
+			}
 		}
 	}
 }
