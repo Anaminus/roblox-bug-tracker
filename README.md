@@ -10,6 +10,8 @@ instead.
 For issues related to CoreScripts, libraries, and other relevant internals,
 use the **[ROBLOX/Core-Scripts](https://github.com/ROBLOX/Core-Scripts)** issue tracker.
 
+For issues related to Gear, check out the unofficial **[gear tracker](https://github.com/matthewdean/roblox-gear-bug-tracker/issues)**.
+
 ## Things
 
 - Try to create steps that reproduce a bug.
