@@ -8,8 +8,7 @@ For long-winded feature requests, try checking out **[roblox-enhancement-proposa
 instead.
 
 For issues related to CoreScripts, libraries, and other relevant internals,
-use the issue tracker of the
-**[ROBLOX/Core-Scripts](https://github.com/ROBLOX/Core-Scripts)** repository.
+use the **[ROBLOX/Core-Scripts](https://github.com/ROBLOX/Core-Scripts)** issue tracker.
 
 ## Things
 
