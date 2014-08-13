@@ -46,6 +46,7 @@ willfix   | Confirmed by a developer that the issue will be fixed/added.
 wontfix   | Confirmed by a developer that the issue will not be fixed/added.
 duplicate | A similar issue has already been submitted.
 invalid   | Not an issue (i.e. expected behavior), should be submitted elsewhere, or does not follow the format of this tracker.
+fixing    | Indicates that the issue has been or is being actively fixed. The issue should be checked periodically to verify that it has been fixed. This tag should be removed when the issue is closed.
 
 ### Categories
 
