@@ -18,7 +18,7 @@ Before submitting an issue related to the website, make sure the issue still occ
 
 ## Things
 
-- Try to create steps that reproduce a bug.
+- Try to create steps that reproduce an issue. Issues that cannot be reproduced are likely to be closed.
 - Create a place or model file that shows a bug in action.
 - Don't group separate issues into one issue.
 - Comments that do not contribute may be removed.
