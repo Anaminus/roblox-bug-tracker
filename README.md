@@ -12,6 +12,10 @@ use the **[ROBLOX/Core-Scripts](https://github.com/ROBLOX/Core-Scripts)** issue 
 
 For issues related to Gear, Hats, and other assets **made by ROBLOX**, check out the unofficial **[asset bug tracker](https://github.com/matthewdean/roblox-asset-bug-tracker/issues)**.
 
+Before submitting an issue related to the website, make sure the issue still occurs with browser extensions disabled. Also indicate which browser you are using. To temporarily disable extensions:
+- Chrome Incognito Mode: Menu > New incognito window (or Ctrl+Shift+N)
+- Firefox Safe Mode: Menu > Help Menu > Restart with Add-ons Disabled... > Start in Safe Mode (or hold Shift while opening firefox)
+
 ## Things
 
 - Try to create steps that reproduce a bug.
