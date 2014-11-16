@@ -16,6 +16,8 @@ Before submitting an issue related to the website, make sure the issue still occ
 - Chrome Incognito Mode: Menu > New incognito window (or Ctrl+Shift+N)
 - Firefox Safe Mode: Menu > Help Menu > Restart with Add-ons Disabled... > Start in Safe Mode (or hold Shift while opening firefox)
 
+Do not use this tracker to report exploits and vulnerabilities. These should be reported by emailing info@roblox.com, or by sending a private message to [ConvexHero](http://www.roblox.com/User.aspx?id=66766775).
+
 ## Things
 
 - Try to create steps that reproduce an issue. Issues that cannot be reproduced are likely to be closed.
