@@ -77,6 +77,7 @@ used if an issue occurs on some platforms, but not others.
 - Windows 8
 - OS X
 - iOS
+- Android
 
 Some of these labels may not actually exist until they are needed.
 
