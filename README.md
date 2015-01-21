@@ -57,7 +57,6 @@ willfix   | Confirmed by a developer that the issue will be fixed/added.
 wontfix   | Confirmed by a developer that the issue will not be fixed/added.
 duplicate | A similar issue has already been submitted.
 invalid   | Not an issue (i.e. expected behavior), should be submitted elsewhere, or does not follow the format of this tracker.
-fixing    | Indicates that the issue has been or is being actively fixed. The issue should be checked periodically to verify that it has been fixed. This tag should be removed when the issue is closed.
 
 ### Categories
 
@@ -131,3 +130,9 @@ are easier to read.
 
 If you submit an issue as a pull request, I wont be able to merge it without
 also closing the issue.
+
+## Assignees
+
+No actual use. Issues assigned to the owner are marked for periodic checking
+to see whether they've been fixed. Collaborators should not assign issues to
+anyone.
