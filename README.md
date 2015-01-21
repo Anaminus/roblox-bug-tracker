@@ -55,7 +55,7 @@ Label     | Description
 ----------|------------
 willfix   | Confirmed by a developer that the issue will be fixed/added.
 wontfix   | Confirmed by a developer that the issue will not be fixed/added.
-duplicate | A similar issue has already been submitted.
+duplicate | A similar issue has already been submitted. The issue should still be marked with the appropriate labels.
 invalid   | Not an issue (i.e. expected behavior), should be submitted elsewhere, or does not follow the format of this tracker.
 
 ### Categories
