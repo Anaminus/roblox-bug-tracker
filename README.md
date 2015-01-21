@@ -33,6 +33,11 @@ Here be descriptions for labels in the issue tracker. Try to construct your
 issues around these labels. If you think your issue requires a new kind of
 label, submit another issue describing it.
 
+### Unlabed
+
+All issues should have some kind of label. Issues that have no labels haven't
+been checked or dealt with yet. These can be searched for with `no:label`.
+
 ### Types
 
 What kind of issue. Every valid issue should have one of these.
