@@ -1,0 +1,475 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<External>null</External>
+	<External>nil</External>
+	<Item class="Workspace" referent="RBX95ED8B203BB24007A2D8398866DB5AA6">
+		<Properties>
+			<Ref name="CurrentCamera">RBXB6E3ECB48B5746C882C7775A549D2FD2</Ref>
+			<double name="DistributedGameTime">0</double>
+			<bool name="FilteringEnabled">true</bool>
+			<CoordinateFrame name="ModelInPrimary">
+				<X>0</X>
+				<Y>0</Y>
+				<Z>0</Z>
+				<R00>1</R00>
+				<R01>0</R01>
+				<R02>0</R02>
+				<R10>0</R10>
+				<R11>1</R11>
+				<R12>0</R12>
+				<R20>0</R20>
+				<R21>0</R21>
+				<R22>1</R22>
+			</CoordinateFrame>
+			<string name="Name">Workspace</string>
+			<Ref name="PrimaryPart">null</Ref>
+			<bool name="StreamingEnabled">false</bool>
+		</Properties>
+		<Item class="Camera" referent="RBXB6E3ECB48B5746C882C7775A549D2FD2">
+			<Properties>
+				<Ref name="CameraSubject">null</Ref>
+				<token name="CameraType">0</token>
+				<CoordinateFrame name="CoordinateFrame">
+					<X>-0.350466728</X>
+					<Y>13.7206488</Y>
+					<Z>36.4474335</Z>
+					<R00>0.617882669</R00>
+					<R01>0.3578448</R01>
+					<R02>-0.700120091</R02>
+					<R10>-1.49011612e-008</R10>
+					<R11>0.890431762</R11>
+					<R12>0.455116749</R12>
+					<R20>0.78627032</R20>
+					<R21>-0.281208754</R21>
+					<R22>0.550182343</R22>
+				</CoordinateFrame>
+				<float name="FieldOfView">70</float>
+				<CoordinateFrame name="Focus">
+					<X>1.04977345</X>
+					<Y>12.8104153</Y>
+					<Z>35.3470688</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<string name="Name">Camera</string>
+			</Properties>
+		</Item>
+		<Item class="Terrain" referent="RBX3649CAA4346542EBA172CC4B51ABC3F2">
+			<Properties>
+				<bool name="Anchored">true</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">4</token>
+				<token name="BottomSurfaceInput">0</token>
+				<int name="BrickColor">194</int>
+				<CoordinateFrame name="CFrame">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<BinaryString name="ClusterGridV3"></BinaryString>
+				<float name="Elasticity">0.300000012</float>
+				<float name="Friction">0.5</float>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">true</bool>
+				<token name="Material">256</token>
+				<string name="Name">Terrain</string>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">3</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">0</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<Vector3 name="size">
+					<X>2044</X>
+					<Y>252</Y>
+					<Z>2044</Z>
+				</Vector3>
+			</Properties>
+		</Item>
+		<Item class="Part" referent="RBXE0B8776134194413B64827DB3F2144D8">
+			<Properties>
+				<bool name="Anchored">true</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">4</token>
+				<token name="BottomSurfaceInput">0</token>
+				<int name="BrickColor">199</int>
+				<CoordinateFrame name="CFrame">
+					<X>0</X>
+					<Y>-0.610000014</Y>
+					<Z>0</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<float name="Elasticity">0.5</float>
+				<float name="Friction">0.300000012</float>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">true</bool>
+				<token name="Material">256</token>
+				<string name="Name">BasePlate</string>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">3</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">0.5</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<token name="formFactorRaw">1</token>
+				<token name="shape">1</token>
+				<Vector3 name="size">
+					<X>512</X>
+					<Y>1.20000005</Y>
+					<Z>512</Z>
+				</Vector3>
+			</Properties>
+		</Item>
+	</Item>
+	<Item class="NonReplicatedCSGDictionaryService" referent="RBXD899C06C769048D1B145A69093993E62">
+		<Properties>
+			<string name="Name">NonReplicatedCSGDictionaryService</string>
+		</Properties>
+	</Item>
+	<Item class="CSGDictionaryService" referent="RBX7B2FB320AE9B49EBAD5E8C3C71D55D5D">
+		<Properties>
+			<string name="Name">CSGDictionaryService</string>
+		</Properties>
+	</Item>
+	<Item class="LogService" referent="RBX580DC9C3F8434A829EBAA56258CACBE1">
+		<Properties>
+			<string name="Name">LogService</string>
+		</Properties>
+	</Item>
+	<Item class="Players" referent="RBXA8E3BB9854A54D57A1294DE18E33AB00">
+		<Properties>
+			<bool name="CharacterAutoLoads">true</bool>
+			<string name="Name">Players</string>
+		</Properties>
+	</Item>
+	<Item class="PointsService" referent="RBX100069359EA84B75BCE23D7BF6DAA653">
+		<Properties>
+			<string name="Name">PointsService</string>
+		</Properties>
+	</Item>
+	<Item class="AdService" referent="RBX9C4627AF99F5442E918D02C7292D71FE">
+		<Properties>
+			<string name="Name">AdService</string>
+		</Properties>
+	</Item>
+	<Item class="NotificationService" referent="RBX31243FDF83BF4F3D8182448BE5E328EF">
+		<Properties>
+			<string name="Name">NotificationService</string>
+		</Properties>
+	</Item>
+	<Item class="ReplicatedFirst" referent="RBX70A96E4458F843D6A0DB03854B010462">
+		<Properties>
+			<string name="Name">ReplicatedFirst</string>
+		</Properties>
+	</Item>
+	<Item class="StarterPlayer" referent="RBX2C59BD02A87E4727BE5691E3D9A0A42D">
+		<Properties>
+			<float name="CameraMaxZoomDistance">400</float>
+			<float name="CameraMinZoomDistance">0.5</float>
+			<token name="CameraMode">0</token>
+			<token name="DevCameraOcclusionMode">0</token>
+			<token name="DevComputerCameraMovementMode">0</token>
+			<token name="DevComputerMovementMode">0</token>
+			<token name="DevTouchCameraMovementMode">0</token>
+			<token name="DevTouchMovementMode">0</token>
+			<bool name="EnableMouseLockOption">true</bool>
+			<float name="HealthDisplayDistance">100</float>
+			<string name="Name">StarterPlayer</string>
+			<float name="NameDisplayDistance">100</float>
+		</Properties>
+	</Item>
+	<Item class="StarterPack" referent="RBX65E9FC49083143A5B2D95A3F627655E5">
+		<Properties>
+			<string name="Name">StarterPack</string>
+		</Properties>
+	</Item>
+	<Item class="StarterGui" referent="RBX9EE76EE9AFD7497E925FE6624B453D14">
+		<Properties>
+			<string name="Name">StarterGui</string>
+			<bool name="ShowDevelopmentGui">true</bool>
+		</Properties>
+	</Item>
+	<Item class="SoundService" referent="RBX132C1C62C15545D0AE25B0BC142339D4">
+		<Properties>
+			<token name="AmbientReverb">0</token>
+			<float name="DistanceFactor">10</float>
+			<float name="DopplerScale">1</float>
+			<string name="Name">Soundscape</string>
+			<float name="RolloffScale">1</float>
+		</Properties>
+	</Item>
+	<Item class="CollectionService" referent="RBXDE634FF013FF488081D1CBB6DDEEF66F">
+		<Properties>
+			<string name="Name">CollectionService</string>
+		</Properties>
+	</Item>
+	<Item class="PhysicsService" referent="RBX2EBE59D4229B4EA2BDE2694B1A844088">
+		<Properties>
+			<string name="Name">PhysicsService</string>
+		</Properties>
+	</Item>
+	<Item class="BadgeService" referent="RBX961E65689A014200951EC1294F01F079">
+		<Properties>
+			<string name="Name">BadgeService</string>
+		</Properties>
+	</Item>
+	<Item class="Geometry" referent="RBX17124946234F4E4AB1655DFF042DB568">
+		<Properties>
+			<string name="Name">Geometry</string>
+		</Properties>
+	</Item>
+	<Item class="RenderHooksService" referent="RBX6701507092404DD2828C437F0CC84C17">
+		<Properties>
+			<string name="Name">RenderHooksService</string>
+		</Properties>
+	</Item>
+	<Item class="SocialService" referent="RBX0924E7AD590C488EB019F5276380E11C">
+		<Properties>
+			<string name="Name">SocialService</string>
+		</Properties>
+	</Item>
+	<Item class="GamePassService" referent="RBX6AFD294687D547CBB2BE10E30BE00F88">
+		<Properties>
+			<string name="Name">GamePassService</string>
+		</Properties>
+	</Item>
+	<Item class="Debris" referent="RBX033370BEB44D4FC585EFE64C9EB640FF">
+		<Properties>
+			<int name="MaxItems">1000</int>
+			<string name="Name">Debris</string>
+		</Properties>
+	</Item>
+	<Item class="TimerService" referent="RBX1C6D2B58848B4420AAD7A7461BC59ABA">
+		<Properties>
+			<string name="Name">Instance</string>
+		</Properties>
+	</Item>
+	<Item class="ScriptInformationProvider" referent="RBX76A2854143CE4B27871A9F965C2337E3">
+		<Properties>
+			<string name="Name">Instance</string>
+		</Properties>
+	</Item>
+	<Item class="CookiesService" referent="RBX2E2C1A9240E4456AB7336F9B3B0CE3C3">
+		<Properties>
+			<string name="Name">CookiesService</string>
+		</Properties>
+	</Item>
+	<Item class="TeleportService" referent="RBX32F408C25BE44BFEBBFD2021D6240EAA">
+		<Properties>
+			<string name="Name">Teleport Service</string>
+		</Properties>
+	</Item>
+	<Item class="FWService" referent="RBX81D7E45C74734E999089C2E80BD0D988">
+		<Properties>
+			<string name="Name">Instance</string>
+		</Properties>
+	</Item>
+	<Item class="UserInputService" referent="RBXC089CFCC7FC644518C3BF315058075A3">
+		<Properties>
+			<token name="MouseBehavior">0</token>
+			<bool name="MouseIconEnabled">true</bool>
+			<string name="Name">Instance</string>
+		</Properties>
+	</Item>
+	<Item class="ContextActionService" referent="RBX09BD3360C9044E67AFCAF7A0D0E7AB38">
+		<Properties>
+			<string name="Name">ContextActionService</string>
+		</Properties>
+	</Item>
+	<Item class="ScriptService" referent="RBX96BDD5C01E5045B185FCB43E2DDBDCB5">
+		<Properties>
+			<string name="Name">Instance</string>
+		</Properties>
+	</Item>
+	<Item class="AssetService" referent="RBX4225C8FF6F764812AEF232A2502DC41E">
+		<Properties>
+			<string name="Name">AssetService</string>
+		</Properties>
+	</Item>
+	<Item class="Selection" referent="RBX734B7EADFEFC4849AC0E31A8C8360036">
+		<Properties>
+			<string name="Name">Selection</string>
+		</Properties>
+	</Item>
+	<Item class="ServerScriptService" referent="RBXFEBE38E6A225404EBD27CDC44D6E6AC3">
+		<Properties>
+			<bool name="LoadStringEnabled">false</bool>
+			<string name="Name">ServerScriptService</string>
+		</Properties>
+		<Item class="Script" referent="RBX7F816116B7D84D529C550B97D428ABEF">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">Script</string>
+				<ProtectedString name="Source">local pathfindingService = game:GetService(&quot;PathfindingService&quot;)
+local pointModel = Instance.new(&quot;Model&quot;)
+pointModel.Name = &quot;Points&quot;
+pointModel.Parent = game.Workspace
+
+function visualizePath(path)
+&#9;-- clear old path visualization
+&#9;for _, point in pairs(pointModel:GetChildren()) do
+&#9;&#9;point:Destroy()
+&#9;end
+
+&#9;-- calculate new visualization&#9;
+&#9;local points = path:GetPointCoordinates()
+&#9;for _, point in pairs(points) do
+&#9;&#9;local part = Instance.new(&quot;Part&quot;)
+&#9;&#9;part.Parent = pointModel
+&#9;&#9;part.FormFactor = Enum.FormFactor.Custom
+&#9;&#9;part.Size = Vector3.new(1,1,1)
+&#9;&#9;part.Position = point
+&#9;&#9;part.Anchored = true
+&#9;&#9;part.CanCollide = false
+&#9;&#9;part.BrickColor = BrickColor.Red()
+&#9;end
+end
+
+local start = Vector3.new(0,0,0)
+
+-- Sampled from Mouse.Hit.p on BasePlate
+local target = Vector3.new(26.2596855, -0.00999999046, 25.2070427)
+
+local path = pathfindingService:ComputeRawPathAsync(start, target, 500)
+
+visualizePath(path)
+</ProtectedString>
+			</Properties>
+		</Item>
+	</Item>
+	<Item class="ServerStorage" referent="RBXE0E9435674AC4FDEBCF7DD161DF589F5">
+		<Properties>
+			<string name="Name">ServerStorage</string>
+		</Properties>
+	</Item>
+	<Item class="ReplicatedStorage" referent="RBX651E00F1F25742E48A7ED58F46ACC8DC">
+		<Properties>
+			<string name="Name">ReplicatedStorage</string>
+		</Properties>
+	</Item>
+	<Item class="LuaWebService" referent="RBX847C29AC52B145BF836E28B55FE5DB8B">
+		<Properties>
+			<string name="Name">Instance</string>
+		</Properties>
+	</Item>
+	<Item class="ChangeHistoryService" referent="RBX8FC62975FCB940DDA94BE27829A3C720">
+		<Properties>
+			<string name="Name">ChangeHistoryService</string>
+		</Properties>
+	</Item>
+	<Item class="Lighting" referent="RBX4CAF184FB55B4B78B399B592B3D13F24">
+		<Properties>
+			<Color3 name="Ambient">4278190080</Color3>
+			<float name="Brightness">1</float>
+			<Color3 name="ColorShift_Bottom">4278190080</Color3>
+			<Color3 name="ColorShift_Top">4278190080</Color3>
+			<Color3 name="FogColor">4290822336</Color3>
+			<float name="FogEnd">100000</float>
+			<float name="FogStart">0</float>
+			<float name="GeographicLatitude">41.7332993</float>
+			<bool name="GlobalShadows">true</bool>
+			<string name="Name">Lighting</string>
+			<Color3 name="OutdoorAmbient">4286611584</Color3>
+			<bool name="Outlines">true</bool>
+			<Color3 name="ShadowColor">4289967032</Color3>
+			<string name="TimeOfDay">14:00:00</string>
+		</Properties>
+	</Item>
+	<Item class="TestService" referent="RBX7EFA3849049A4ECD811FB79A26287FA5">
+		<Properties>
+			<bool name="AutoRuns">true</bool>
+			<string name="Description"></string>
+			<bool name="Is30FpsThrottleEnabled">true</bool>
+			<bool name="IsPhysicsEnvironmentalThrottled">true</bool>
+			<bool name="IsSleepAllowed">true</bool>
+			<string name="Name">TestService</string>
+			<int name="NumberOfPlayers">0</int>
+			<double name="SimulateSecondsLag">0</double>
+			<double name="Timeout">10</double>
+		</Properties>
+	</Item>
+	<Item class="HttpService" referent="RBXA52A84BCBA964430B3D43C487CECDA9A">
+		<Properties>
+			<bool name="HttpEnabled">false</bool>
+			<string name="Name">HttpService</string>
+		</Properties>
+	</Item>
+</roblox>
