@@ -1,80 +1,82 @@
 # Roblox Bug Tracker
 
-An unofficial tracker for bugs encountered on [Roblox](http://www.roblox.com).
+Roblox Bug Tracker is an unofficial tracker for issues related to [Roblox](http://www.roblox.com).
 
-**[Go to the Issue Tracker](https://github.com/Anaminus/roblox-bug-tracker/issues)**
-
-For long-winded feature requests, try checking out **[roblox-enhancement-proposals](https://github.com/RobloxLabs/roblox-enhancement-proposals)**
-instead.
-
-For issues related to CoreScripts, libraries, and other relevant internals,
-use the **[ROBLOX/Core-Scripts](https://github.com/ROBLOX/Core-Scripts)** issue tracker.
-
-For issues related to Gear, Hats, and other assets **made by ROBLOX**, check out the unofficial **[asset bug tracker](https://github.com/matthewdean/roblox-asset-bug-tracker/issues)**.
-
-Before submitting an issue related to the website, make sure the issue still occurs with browser extensions disabled. Also indicate which browser you are using. To temporarily disable extensions:
-- Chrome Incognito Mode: Menu > New incognito window (or Ctrl+Shift+N)
-- Firefox Safe Mode: Menu > Help Menu > Restart with Add-ons Disabled... > Start in Safe Mode (or hold Shift while opening firefox)
-
-Do not use this tracker to report exploits and vulnerabilities. These should be reported by emailing info@roblox.com, or by sending a private message to [ConvexHero](http://www.roblox.com/User.aspx?id=66766775).
+**This tracker is for verifiable, reproducible issues related to Roblox itself. If you have a problem, figure out why it is happening before even considering this tracker.**
 
 ## Things
 
-- Try to create steps that reproduce an issue. Issues that cannot be reproduced are likely to be closed.
-- Create a place or model file that shows a bug in action.
+- Create steps that require as little complexity as possible while still producing the bug ("minimal reproduction").
+- Create a place or model file that shows the bug in action. ([submit it with a PR](#submitting-issue-files))
 - Don't group separate issues into one issue.
 - Comments that do not contribute may be removed.
-- If you don't understand what's going on, or you can't reproduce a bug, don't
-  bother submitting an issue.
+- If you don't understand what's going on, or you can't reproduce the bug, don't bother submitting an issue.
+
+## Directory
+
+- For long-winded feature requests, use **[roblox-enhancement-proposals](https://github.com/RobloxLabs/roblox-enhancement-proposals)** instead.
+- For bugs (not feature requests) related to CoreScripts, libraries, and other Lua-implemented internals, use the **[ROBLOX/Core-Scripts](https://github.com/ROBLOX/Core-Scripts)** issue tracker.
+- For issues related to Gear, Hats, and other assets **made by ROBLOX**, use the unofficial **[asset bug tracker](https://github.com/matthewdean/roblox-asset-bug-tracker)**.
+- Before submitting an issue related to the website, make sure the issue still occurs with browser extensions disabled. Also indicate which browser you are using. To temporarily disable extensions:
+	- Chrome Incognito Mode: Menu > New incognito window (or Ctrl+Shift+N)
+	- Firefox Safe Mode: Menu > Help Menu > Restart with Add-ons Disabled... > Start in Safe Mode (or hold Shift while opening firefox)
+- **Do not** use this tracker to report exploits and vulnerabilities. These should be reported by emailing info@roblox.com, or by sending a private message to [ConvexHero](http://www.roblox.com/User.aspx?id=66766775).
+- **[Go to the Issue Tracker](https://github.com/Anaminus/roblox-bug-tracker/issues)**
 
 ## Labels
 
-Here be descriptions for labels in the issue tracker. Try to construct your
-issues around these labels. If you think your issue requires a new kind of
-label, submit another issue describing it.
+Here be descriptions for labels in the issue tracker. Try to construct your issues around these labels. If you think your issue requires a new kind of label, submit another issue describing it.
 
 ### Unlabed
 
-All issues should have some kind of label. Issues that have no labels haven't
-been checked or dealt with yet. These can be searched for with `no:label`.
+All issues should have some kind of label. Unlabed issues haven't been checked or dealt with yet. These can be searched for with `no:label`.
 
 ### Types
 
-What kind of issue. Every valid issue should have one of these.
+Indicates what kind of issue. Each issue will have exactly one of these.
 
 Label       | Description
 ------------|------------
 bug         | Unexpected behavior, doesn't work as specified, etc...
-crash       | Bugs that crash or break the game.
+severe      | Bugs that freeze, crash, break the game, cause data loss, etc...
 enhancement | Feature requests, things you would like to see added or improved.
-tracker     | Related to this bug tracker.
-
-### Status
-
-Label     | Description
-----------|------------
-willfix   | Confirmed by a developer that the issue will be fixed/added.
-wontfix   | Confirmed by a developer that the issue will not be fixed/added.
-duplicate | A similar issue has already been submitted. The issue should still be marked with the appropriate labels.
-invalid   | Not an issue (i.e. expected behavior), should be submitted elsewhere, or does not follow the format of this tracker.
+tracker     | Related to this tracker.
+invalid     | Not an issue (i.e. expected behavior), should be submitted elsewhere, or otherwise does not follow the format of this tracker.
 
 ### Categories
 
-Where the issue occurs.
+Indicates where the issue occurs. Each issue will have exactly one of these.
 
-Label    | Description
----------|------------
-Player   | Occurs only on the Roblox client (RobloxPlayer).
-Studio   | Related to the UI or functionality of Roblox Studio, or occurs only in Studio.
-Engine   | Occurs in-game, related to implementation, behavior, etc. Applies to both the Studio and the Player.
-Lua API  | Related to the Lua API. e.g. misspelled member name, API does not match implementation, etc.
-Launcher | Related to the launcher/installer. Includes that of both the Player and the Studio. Also includes browser plugins.
-Website  | Occurs on Roblox websites; roblox.com, m.roblox.com, wiki.roblox.com, etc. **robloxlabs.com is not included!**
+Label      | Description
+-----------|------------
+Player     | Occurs only on the Roblox client (RobloxPlayer), not the Studio.
+Studio     | Related to the UI or functionality of Roblox Studio, or occurs only in Roblox Studio.
+Engine     | Occurs in-game, related to implementation, behavior, etc. Applies to both the Studio and the Player.
+Lua API    | Related to the Lua API. e.g. misspelled member name, API does not match implementation, etc.
+FileSystem | Involves Roblox-related data on the file system, and how the Roblox launcher/installer interacts with the file system.
+Website    | Occurs on Roblox websites; roblox.com, m.roblox.com, wiki.roblox.com, etc. **robloxlabs.com is not included!**
+
+### Status
+
+The current state of the issue. Each issue will have zero or one of these.
+
+Label     | Description
+----------|------------
+duplicate | A similar issue has already been submitted. The issue will still be marked with the appropriate labels.
+needsinfo | The issue is unclear or needs reproduction steps. Issues with this tag are closed, but may be reopened if sufficient information is provided. The issue will still be marked with the appropriate labels.
+
+### Developer
+
+Indicates interaction involving actual developers of Roblox. Each issue may have zero or one of these.
+
+Label   | Description
+--------|------------
+willfix | Confirmed by a developer that the issue will be fixed/added.
+wontfix | Confirmed by a developer that the issue will not be fixed/added.
 
 ### Platforms
 
-On which platform (operating system) the issue occurs. These should only be
-used if an issue occurs on some platforms, but not others.
+On which platform (operating system) an issue occurs. These will only be used if an issue occurs on some platforms, but not others.
 
 - Windows XP
 - Windows 7
