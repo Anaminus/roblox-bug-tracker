@@ -1,5 +1,3 @@
-**This tracker is for verifiable, reproducible issues related to Roblox itself. If you have a problem, figure out why it is happening before even considering this tracker.**
-
 ## Things
 
 - Create steps that require as little complexity as possible while still producing the bug ("minimal reproduction").
