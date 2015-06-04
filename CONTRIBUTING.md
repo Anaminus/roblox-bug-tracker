@@ -8,14 +8,14 @@
 
 ## Directory
 
-- For long-winded feature requests, use **[roblox-enhancement-proposals](https://github.com/RobloxLabs/roblox-enhancement-proposals)** instead.
-- For bugs (not feature requests) related to CoreScripts, libraries, and other Lua-implemented internals, use the **[ROBLOX/Core-Scripts](https://github.com/ROBLOX/Core-Scripts)** issue tracker.
-- Bugs (not feature requests) related to the default PlayerScripts (e.g. camera and character movement) should also be submitted to the **[Core-Scripts](https://github.com/ROBLOX/Core-Scripts)** issue tracker.
-- For issues related to Gear, Hats, and other assets **made by ROBLOX**, use the unofficial **[asset bug tracker](https://github.com/matthewdean/roblox-asset-bug-tracker)**.
+- **Do not** use this tracker to report exploits and vulnerabilities. These should be reported by emailing info@roblox.com, or by sending a private message to [ConvexHero](http://www.roblox.com/User.aspx?id=66766775).
 - Before submitting an issue related to the website, make sure the issue still occurs with browser extensions disabled. Also indicate which browser you are using. To temporarily disable extensions:
 	- Chrome Incognito Mode: Menu > New incognito window (or Ctrl+Shift+N)
 	- Firefox Safe Mode: Menu > Help Menu > Restart with Add-ons Disabled... > Start in Safe Mode (or hold Shift while opening firefox)
-- **Do not** use this tracker to report exploits and vulnerabilities. These should be reported by emailing info@roblox.com, or by sending a private message to [ConvexHero](http://www.roblox.com/User.aspx?id=66766775).
+- For issues related to Gear, Hats, and other assets **made by ROBLOX**, use the unofficial **[asset bug tracker](https://github.com/matthewdean/roblox-asset-bug-tracker)**.
+- For bugs (not feature requests) related to CoreScripts, libraries, and other Lua-implemented internals, use the **[ROBLOX/Core-Scripts](https://github.com/ROBLOX/Core-Scripts)** issue tracker.
+- Bugs (not feature requests) related to the default PlayerScripts (e.g. camera and character movement) should also be submitted to the **[Core-Scripts](https://github.com/ROBLOX/Core-Scripts)** issue tracker.
+- For long-winded feature requests, use **[roblox-enhancement-proposals](https://github.com/RobloxLabs/roblox-enhancement-proposals)** instead.
 
 ## Labels
 
