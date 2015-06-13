@@ -15,6 +15,7 @@
 - For issues related to Gear, Hats, and other assets **made by ROBLOX**, use the unofficial **[asset bug tracker](https://github.com/matthewdean/roblox-asset-bug-tracker)**.
 - For bugs (not feature requests) related to CoreScripts, libraries, and other Lua-implemented internals, use the **[ROBLOX/Core-Scripts](https://github.com/ROBLOX/Core-Scripts)** issue tracker.
 - Bugs (not feature requests) related to the default PlayerScripts (e.g. camera and character movement) should also be submitted to the **[Core-Scripts](https://github.com/ROBLOX/Core-Scripts)** issue tracker.
+- For issues related to Roblox Studio's Lua-implemented tools (including smooth terrain tools and the transform tool), use the **[ROBLOX/Studio-Tools](https://github.com/ROBLOX/Studio-Tools)** issue tracker.
 - For long-winded feature requests, use **[roblox-enhancement-proposals](https://github.com/RobloxLabs/roblox-enhancement-proposals)** instead.
 
 ## Labels
