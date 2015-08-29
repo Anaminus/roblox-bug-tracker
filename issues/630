@@ -11936,7 +11936,7 @@ Press Player and enter the vehicle. Drive towards the sun and keep an eye on the
 			<string name="Name">TestService</string>
 			<int name="NumberOfPlayers">0</int>
 			<double name="SimulateSecondsLag">0</double>
-			<double name="Timeout">10</double>
+			<double name="Timeout">15</double>
 		</Properties>
 	</Item>
 	<Item class="GamepadService" referent="RBXA1AA5587C1024E9AA68C7E2F2ED473F1">
